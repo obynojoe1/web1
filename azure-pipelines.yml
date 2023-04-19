@@ -30,8 +30,8 @@ stages:
               yarn install
               yarn build 
             displayName: 'yarn install, build'
-            env:
             
+
             
 
           - task: CopyFiles@2
