@@ -27,12 +27,10 @@ stages:
             displayName: 'Install Node.js'
 
           - script: |
-              yarn ci
-              yarn run build --if-present
+              yarn install
+              yarn build 
             displayName: 'yarn install, build'
-            env:
-              CI: true
-              REACT_APP_API_DOMAIN: '$(apiDomain)'
+            
 
           - task: CopyFiles@2
             inputs:
