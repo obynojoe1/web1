@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React and devops and solution engineer.
+          Learn React and devops and solution architect.
         </a>
       </header>
     </div>
