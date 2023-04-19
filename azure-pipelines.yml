@@ -1,5 +1,5 @@
 trigger:
-- master
+- main
           
 pr: none
 
@@ -27,9 +27,9 @@ stages:
             displayName: 'Install Node.js'
 
           - script: |
-              npm ci
-              npm run build --if-present
-            displayName: 'npm install, build'
+              yarn ci
+              yarn run build --if-present
+            displayName: 'yarn install, build'
             env:
               CI: true
               REACT_APP_API_DOMAIN: '$(apiDomain)'
